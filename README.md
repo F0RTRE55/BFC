@@ -3,7 +3,7 @@
 
 Biofoundry Palette is a python-based planning-assistance software for gene cloning and genome engineering, enabling automated high-throughput experiments.
 
-To learn more about Biofoundry Palette, including program edittaion instructions and documentation, visit [BioFoundrt Research Center](https://swb.skku.edu/BioFoundryRC/index.do).
+To learn more about Biofoundry Palette, including program edittaion instructions and documentation, visit [BioFoundry Research Center](https://swb.skku.edu/BioFoundryRC/index.do).
 
 ## Installation
 Biofoundry Palette Program does not require additional installation.
