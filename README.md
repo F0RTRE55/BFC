@@ -10,6 +10,7 @@ Biofoundry Palette Program does not require any additional installation. In orde
 However, when if one wants to run using python script, please install the following python packages
 
 **Pre-requisites:**
+<br/>
 [openpyxl](https://openpyxl.readthedocs.io/en/stable/)
 | OS | Command |
 | ----------- | ----------- |
