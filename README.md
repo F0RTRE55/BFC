@@ -49,6 +49,10 @@ F[adder.py]--Order Information-->I[save_data.py]
 D[format_reader.py]--create file-->J((past_order.xlsx))
 I[save_data.py]--insert information-->J((past_order.xlsx))
 ```
+**Formulation used in position.py and volume.py**
+<p align = "center">
+  <img src="https://lh6.googleusercontent.com/RMQ685oE1KNXtYFycDT8TXQ2h-E4pytpEjyQn6KkJO24BlSbD-LkGOoSz-3K-fYbku0_jwPXmZiVPcFrMjNatgI=w16383"/>
+ </p>
 
 ## Publishing
 The repository is set up to prohibit commits directly to the master branch. GitHub PRs must be approved by at least one other developer before they can be merged into master.
