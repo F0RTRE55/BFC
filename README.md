@@ -15,7 +15,7 @@ Biofoundry Palette Program does not require any additional installation. In orde
 - NEW/OLD WELL: choice of using old/used well
 - WELL ID: place the identification of old/used well
 - WELL POSITION: starting column position of the well
-- STEP: step (step 11 is golden 
+- STEP: step (step 11 is golden gate assembly)
 - ORDER DATE: date of order is placed
 - DEADLINE: date of product to be sent
 - FILE NAME: name of the instruction file
