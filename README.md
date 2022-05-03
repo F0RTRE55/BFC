@@ -7,9 +7,10 @@ Biofoundry Palette is a python-based planning-assistance software for synthetic 
 
 ## Installation and Execution
 Biofoundry Palette Program does not require any additional installation. In order to execute the file, a please click BFP.exe
-However, when if one wants to run using python script, please install the following python packages
+However, when if one wants to run using raw python script, please install the following python packages
 
 **Pre-requisites:**
+The following commands is to be executed in Windows Powershell
 <br/>
 [openpyxl](https://openpyxl.readthedocs.io/en/stable/)
 | OS | Command |
