@@ -3,10 +3,11 @@
   <img src="https://lh6.googleusercontent.com/RMQ685oE1KNXtYFycDT8TXQ2h-E4pytpEjyQn6KkJO24BlSbD-LkGOoSz-3K-fYbku0_jwPXmZiVPcFrMjNatgI=w16383"/>
  </p>
 
-Biofoundry Palette is a python-based planning-assistance software for synthetic biology applications in an automated workflow and biofoundry facilities, enabling automated high-throughput experiments. The program in this repository is for liquid handler-based experimentation and operation in the biofoundry workflow.
+Biofoundry Palette is a python-based planning-assistance software for synthetic biology applications in an automated workflow and biofoundry facilities, enabling automated high-throughput experiments. The program in this repository is for liquid handler-based experimentation and operation in the biofoundry workflow. Step 6~11 is still undergoing in volume and positional optimization. Further update will be uploaded as soon as possible. If you want to get new on the update, please contact the [BioFoundry Research Center](https://swb.skku.edu/BioFoundryRC/index.do).
 
 ## Installation and Execution
 Biofoundry Palette Program does not require any additional installation. In order to execute the file, a please click BFP.exe
+
 **Operation Instruction**
 -OPERATOR: place the name of the person running the machine
 - CLIENT: place the name of the customer
@@ -19,7 +20,6 @@ Biofoundry Palette Program does not require any additional installation. In orde
 - ORDER DATE: date of order is placed
 - DEADLINE: date of product to be sent
 - FILE NAME: name of the instruction file
-
 
 However, when if one wants to run using raw python script, please install the following python packages
 
