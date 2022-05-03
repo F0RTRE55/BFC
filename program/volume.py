@@ -2,6 +2,7 @@
 #Latest Update on: 2022 05 03
 #author: github.com/F0RTRE55
 
+from re import S
 from openpyxl import load_workbook
 
 def step1(current_directory, order_volume, file_name):
@@ -61,7 +62,12 @@ def step2(current_directory, order_volume, file_name):
     distilled_water =  float(ws["E98"].value)
     ws['E98'] = distilled_water * order_volume / 8
     enzyme_per_tube =  float(ws["E99"].value)
-    ws['E99'] = enzyme_per_tube * order_volume / 8
+    if 1 <= order_volume/8 <= 4:
+        ws['E99'] = enzyme_per_tube * order_volume / 8
+    elif 5 <= order_volume/8 <= 8:
+        ws['E99'] = enzyme_per_tube * order_volume / 8 / 2
+    elif 9 <= order_volume/8 <= 12:
+        ws['E99'] = enzyme_per_tube * order_volume / 8 / 4
     enzyme_total =  float(ws["E100"].value)
     ws['E100'] = enzyme_total * order_volume / 8
     #buffer PM
@@ -85,12 +91,18 @@ def step3(current_directory, order_volume, file_name):
     #DNA#
     #5X KCM
     fiveX_KCM_per_tube =  float(ws["E92"].value)
-    ws['E92'] = fiveX_KCM_per_tube * order_volume / 8
+    if 1 <= order_volume/8 <= 8:
+        ws['E92'] = fiveX_KCM_per_tube * order_volume / 8
+    elif 9 <= order_volume/8 <= 12:
+        ws['E92'] = fiveX_KCM_per_tube * order_volume / 8 / 2
     fiveX_KCM_total =  float(ws["E93"].value)
     ws['E93'] = fiveX_KCM_total * order_volume / 8
     #E.coli competent cell
     ecoli_per_tube =  float(ws["E95"].value)
-    ws['E95'] = ecoli_per_tube * order_volume / 8
+    if 1 <= order_volume/8 <= 6:
+        ws['E95'] = ecoli_per_tube * order_volume / 8
+    elif 1 <= order_volume/8 <= 7:
+        ws['E95'] = ecoli_per_tube * order_volume / 8 / 2
     ecoli_total =  float(ws["E96"].value)
     ws['E96'] = ecoli_total * order_volume / 8
     #ligation
@@ -101,7 +113,12 @@ def step3(current_directory, order_volume, file_name):
     DW_tube =  float(ws["E101"].value)
     ws['E101'] = DW_tube * order_volume / 8
     ligation_pre_mix_per_tube =  float(ws["E102"].value)
-    ws['E102'] = ligation_pre_mix_per_tube * order_volume / 8
+    if 1 <= order_volume/8 <= 4:
+        ws['E102'] = ligation_pre_mix_per_tube * order_volume / 8
+    elif 5 <= order_volume/8 <= 8:
+        ws['E102'] = ligation_pre_mix_per_tube * order_volume / 8 / 2
+    elif 9 <= order_volume/8 <= 12:
+        ws['E102'] = ligation_pre_mix_per_tube * order_volume / 8 / 4
     ligation_pre_mix_total =  float(ws["E103"].value)
     ws['E103'] = ligation_pre_mix_total * order_volume / 8
     #d.w.
@@ -202,12 +219,18 @@ def step8(current_directory, order_volume, file_name):
     #rules
     #2X sapphire
     twoX_sapphire_per_tube = float(ws["E91"].value)
-    ws['E91'] = twoX_sapphire_per_tube * order_volume / 8
+    if 1 <= order_volume/8 <= 6:
+        ws['E91'] = twoX_sapphire_per_tube * order_volume / 8
+    elif 7 <= order_volume/8 <= 12:
+        ws['E91'] = twoX_sapphire_per_tube * order_volume / 8 / 2
     twoX_sapphire_total = float(ws["E92"].value)
     ws['E92'] = twoX_sapphire_total * order_volume / 8
     #buffer EB
     buffer_eb_per_tube = float(ws["E94"].value)
-    ws['E94'] = buffer_eb_per_tube * order_volume / 8
+    if 1 <= order_volume/8 <= 6:
+        ws['E94'] = buffer_eb_per_tube * order_volume / 8
+    elif 7 <= order_volume/8 <= 12:
+        ws['E91'] = twoX_sapphire_per_tube * order_volume / 8 / 2
     buffer_eb_total = float(ws["E95"].value)
     ws['E95'] = buffer_eb_total * order_volume / 8
     #buffer PM
@@ -285,12 +308,18 @@ def step11(current_directory, order_volume, file_name):
     ws['E100'] = golden_gate_mixture_total * order_volume / 8
     #5X kCM
     fiveX_KCM_per_tube = float(ws["E103"].value)
-    ws['E103'] = fiveX_KCM_per_tube * order_volume / 8
+    if 1 <= order_volume/8 <= 6:
+        ws['E103'] = fiveX_KCM_per_tube * order_volume / 8
+    elif 7 <= order_volume/8 <= 12:
+        ws['E103'] = fiveX_KCM_per_tube * order_volume / 8 / 2
     fiveX_KCM_total = float(ws["E104"].value)
     ws['E104'] = fiveX_KCM_total * order_volume / 8
     #E.coli competent cell
     ecoli_per_tube = float(ws["E106"].value)
-    ws['E106'] = ecoli_per_tube * order_volume / 8
+    if 1 <= order_volume/8 <= 6:
+        ws['E106'] = ecoli_per_tube * order_volume / 8
+    elif 7 <= order_volume/8 <= 12:
+        ws['E106'] = ecoli_per_tube * order_volume / 8 / 2
     ecoli_total = float(ws["E107"].value)
     ws['E107'] = ecoli_total * order_volume / 8
     #D.W.

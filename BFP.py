@@ -79,7 +79,7 @@ order_volume_input.bind("<Button-1>",order_volume_placeholder_delete) #when butt
 #well codes
 well_new_or_old_var = StringVar() #group radio button and value is set to int
 well_new_or_old_var.set("new") #set well new or old default to new
-well_id_label = Label(root, text="WELL ID:", font = fontstyle, bg = "#ffffff", fg = "#072b60", anchor= "e", width = "15") #well id label
+well_id_label = Label(root, text="PLATE ID:", font = fontstyle, bg = "#ffffff", fg = "#072b60", anchor= "e", width = "15") #well id label
 well_id_label.grid(row = 5, column = 0) #well id label grid
 well_id_input = Entry(root, width = 20) #well id input
 well_id_input.grid(row = 5, column = 1) #well id input grid

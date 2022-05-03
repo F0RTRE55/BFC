@@ -45,7 +45,7 @@ def step_3_KCM(current_directory, order_volume, file_name):
     ws = workbook.active
     ws = workbook.worksheets[0]
     #rules
-    if 1 <= order_volume/8 <= 6:
+    if 1 <= order_volume/8 <= 8:
         ws['B28'] = " "
         ws['B28'].fill = PatternFill(start_color='FFFFFF', end_color='FFFFFF', fill_type = "solid")
     ###save excel###
