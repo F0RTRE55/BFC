@@ -51,7 +51,7 @@ I[save_data.py]--insert information-->J((past_order.xlsx))
 ```
 **Formulation used in position.py and volume.py**
 <p align = "center">
-  <img src="https://lh6.googleusercontent.com/RMQ685oE1KNXtYFycDT8TXQ2h-E4pytpEjyQn6KkJO24BlSbD-LkGOoSz-3K-fYbku0_jwPXmZiVPcFrMjNatgI=w16383"/>
+  <img src="https://user-images.githubusercontent.com/57700611/166395788-2004a085-4ca9-4b36-a466-c148f91bd37d.png"/>
  </p>
 
 ## Publishing
