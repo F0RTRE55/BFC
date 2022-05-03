@@ -69,7 +69,7 @@ I[save_data.py]--insert information-->J((past_order.xlsx))
  </p>
 
 ## Publishing
-The repository is set up to prohibit commits directly to the master branch. GitHub PRs must be approved by at least one other developer before they can be merged into master.
+The repository is set up to prohibit commits directly to the main branch. GitHub PRs must be approved by at least one other developer before they can be merged into main branch.
 
 ## Additional Information
 To learn more about Biofoundry Palette, including program edittaion instructions and documentation, visit [BioFoundry Research Center](https://swb.skku.edu/BioFoundryRC/index.do).
