@@ -94,7 +94,6 @@ def well_calculation(current_directory, order_volume, well_new_or_old, wellID, w
 
 #save data except well
 def save_data_control(current_directory, operator, client, orderID, order_volume, well_new_or_old, wellID, well_position, step, order_date, deadline, file_name):
-    
     #ask question if user wants to save data
     reply = messagebox.askquestion("BFC V.4","Do you want to save order information?")
     if reply == "yes":

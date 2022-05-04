@@ -13,7 +13,6 @@ def new_well(current_directory, order_volume, wellID, well_position, file_name):
     column_des = int(column_des * 8)
     position = int(well_position)
     repeating_wells(file_name, position, column_whole, column_des, current_directory)
-    adder.save_well_data(column_whole, column_des)
 
 def repeating_wells (name, position, column_whole, column_des, parent_path):
     result_excel_path = parent_path
